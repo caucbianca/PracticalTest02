@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="ro.pub.cs.systems.eim.practicaltest02.PracticalTest02MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/serverText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SERVER"
+        android:gravity="center"
+        android:enabled="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/serverPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Port"
+            android:enabled="true"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/clientText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLIENT"
+        android:gravity="center"
+        android:enabled="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:enabled="true"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/clientPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Port"
+            android:text=""
+            android:enabled="true"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Word"
+            android:enabled="true"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/minLetters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Min letters"
+            android:enabled="true"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/weatherView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anagramele sunt:"/>
+
+</LinearLayout>
